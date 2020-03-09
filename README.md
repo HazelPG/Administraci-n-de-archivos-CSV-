@@ -14,34 +14,34 @@ Adicionalmente permite consultar el contenido de un archivo CSV (Cargado mediant
 
 # URL API
 
-- lista los archivos creados
--```/api/file/ ```
+> lista los archivos creados
+- ```/api/file/ ```
 - Ejemplo 
--```http://127.0.0.1:8000/api/file/```
-- Lista achivos pasandole un pk
+```http://127.0.0.1:8000/api/file/```
+> Lista achivos pasandole un pk
 - ```api/file/(?P<pk>[^/.]+)/```
 - Ejemplo
-- ```http://127.0.0.1:8000/api/file/9/```
-- Detalla el contenido de un archivo csv pansando la pk del registro
+```http://127.0.0.1:8000/api/file/9/```
+> Detalla el contenido de un archivo csv pansando la pk del registro
 - ```api/file/detail/(?P<pk>\d+)```
 - Ejemplo
-- ```http://127.0.0.1:8000/api/file/detail/10```
+```http://127.0.0.1:8000/api/file/detail/10```
 
-- Filtra por cualquier parametro
+> Filtra por cualquier parametro
 - ```api/file/detail/(?P<pk>\d+)?search=```
 - Ejemplo
-- ```http://127.0.0.1:8000/api/file/detail/10?search=gonzales```
+```http://127.0.0.1:8000/api/file/detail/10?search=gonzales```
 
-- Ordenar por parametros
+> Ordenar por parametros
 - ```api/file/detail/(?P<pk>\d+)?order=```
 - Ejemplo
-- ```http://127.0.0.1:8000/api/file/detail/10?order=edad```
-- Ordenar por parametros y de forma desendente o ascendente 
+```http://127.0.0.1:8000/api/file/detail/10?order=edad```
+> Ordenar por parametros y de forma desendente o ascendente 
 - ```api/file/detail/(?P<pk>\d+)?order=&desc=```
 - Ejemplo
-- ```http://127.0.0.1:8000/api/file/detail/10?order=apellidos&desc=True``` 
+```http://127.0.0.1:8000/api/file/detail/10?order=apellidos&desc=True``` 
  
-- Paginacion
+> Paginacion
 - ```/api/file/?page=```
 - Ejemplo
-- ```http://127.0.0.1:8000/api/file/?page=2```
+```http://127.0.0.1:8000/api/file/?page=2```
