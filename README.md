@@ -14,9 +14,9 @@ Adicionalmente permite consultar el contenido de un archivo CSV (Cargado mediant
 
 # URL API
 
-lista los archivos creados
+- lista los archivos creados
 ```/api/file/ ```
-Ejemplo 
+- Ejemplo 
 ```http://127.0.0.1:8000/api/file/```
 Lista achivos pasandole un pk
 ```api/file/(?P<pk>[^/.]+)/```
