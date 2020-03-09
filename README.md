@@ -28,8 +28,12 @@ Filtra por cualquier parametro
 
 Ordenar por parametros
 ```api/file/detail/(?P<pk>\d+)?order=apellidos```
+```api/file/detail/(?P<pk>\d+)?order=nombre```
+```api/file/detail/(?P<pk>\d+)?order=edad```
 
 Ordenar por parametros y de forma desendente o ascendente 
-```api/file/detail/(?P<pk>\d+)?order=apellidos&desc=True ``` 
+```api/file/detail/(?P<pk>\d+)?order=apellidos&desc=True ```
+```api/file/detail/(?P<pk>\d+)?order=nombre&desc=True ```
+```api/file/detail/(?P<pk>\d+)?order=edad&desc=True ```
   
   
