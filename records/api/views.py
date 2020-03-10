@@ -19,20 +19,21 @@ import csv
 class UserViewSet(APIView):
     queryset = User.objects.all()
     serializer_class = UserSerializer
-    #permission_classes = [IsAuthenticated]
+    permission_classes = [IsAuthenticated]
 
 #VIEW FILES
 class FileList(viewsets.ModelViewSet):
     page_size = 5
     queryset = File.objects.all()
     serializer_class = FileSerializer
-    #permission_classes = [permissions.IsAuthenticated]
+    permission_classes = [IsAuthenticated]
 
 #DETAIL FILES
 class Detail_File(generics.RetrieveUpdateDestroyAPIView):
-    #permission_classes = [IsAuthenticated]
+    
     queryset = File.objects.all()
     serializer_class = FileSerializer
+    permission_classes = [IsAuthenticated]
     
     #rewriting class read
     def retrieve(self, request, pk):
